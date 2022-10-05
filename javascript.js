@@ -17,3 +17,8 @@ function getJoke() {
     var pickUpLine = pickUpLineList[Math.floor(Math.random()*pickUpLineList.length)];
     document.getElementById('joke').innerHTML = pickUpLine;
 }
+
+function greeting() {
+    var name = document.getElementById('fname').value
+    document.getElementById('greet').innerHTML = "Hello " + name + "! <br> <h2>If you are interested in my work please contact me through the socials below!</h2>";
+}
